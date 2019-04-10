@@ -4,7 +4,6 @@ frontend:
     preBuild:
       commands:
         - yarn install
-        - yarn make-pdf
     build:
       commands:
         - yarn run build

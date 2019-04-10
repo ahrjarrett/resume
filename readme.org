@@ -1,0 +1,23 @@
+#+TITLE: thegrepper.com
+#+AUTHOR: Andrew Jarrett
+
+Source code for [[https://thegrepper.com/][thegrepper.com]].
+
+* Developing
+
+#+BEGIN_SRC 
+$ yarn start
+#+END_SRC
+
+To push to production:
+
+#+BEGIN_SRC 
+$ git push live master
+#+END_SRC
+
+...where live is configured to point to your DigitalOcean droplet. Refer to bitbucket org-mode file for config options/documentation.
+
+* Make pdf
+
+Start the dev server and in another tab run =yarn make-pdf=. This will create resume.pdf in the build folder.
+

@@ -18,6 +18,7 @@ const items = [
     bullets: [
       <p className="section-item-bullet">
         Personally <span className="hl">built a SaaS MVP</span> for enterprise
+        <br />
         customer, ran the first ever live demo
       </p>,
       <p className="section-item-bullet">

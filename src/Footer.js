@@ -3,8 +3,13 @@ import React from "react"
 const Footer = () => (
   <div className="Footer">
     <p className="footer-cta">
-      See more of my projects at &#160;
-      <a className="section-footer-link" href="https://github.com/ahrjarrett">
+      See my projects and contributions at &#160;
+      <a
+        className="section-footer-link"
+        href="https://github.com/ahrjarrett"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         github.com/ahrjarrett
         <img className="resume-icon" src="svg/link.svg" alt="" />
       </a>

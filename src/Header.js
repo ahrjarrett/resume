@@ -10,6 +10,8 @@ const Header = () => (
         <a
           className="section-footer-link"
           href="https://portfolio.ahrjarrett.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           portfolio.ahrjarrett.com
           <img alt="" className="resume-icon" src="svg/link.svg" />
@@ -23,12 +25,19 @@ const Header = () => (
       </a>
       <a
         className="external-link"
-        href="https://www.linkedin.com/in/andrewhjarrett/"
+        href="https://www.linkedin.com/in/ahrjarrett/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        linkedin.com/in/andrewhjarrett
+        linkedin.com/in/ahrjarrett
         <img alt="" className="resume-icon" src="svg/linkedin.svg" />
       </a>
-      <a className="external-link" href="https://github.com/ahrjarrett">
+      <a
+        className="external-link"
+        href="https://github.com/ahrjarrett"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         github.com/ahrjarrett
         <img alt="" className="resume-icon" src="svg/github.svg" />
       </a>

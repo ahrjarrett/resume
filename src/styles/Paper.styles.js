@@ -22,6 +22,10 @@ export const PaperStyles = styled.div`
     flex-direction: column;
     flex-basis: 0em;
     flex-grow: 1.25;
+    /* TEMPORARY: add more spacing btwn items in right column */
+    .section-item {
+      margin-bottom: 1.45em;
+    }
   }
 
   .hr {

@@ -12,24 +12,25 @@ export default WorkExperience
 const items = [
   {
     title: "OwnLocal",
-    subtitle: ["Production Supervisor", "Production Team Lead"],
-    time: ["2016-2017", "2017-Present"],
+    subtitle: ["Production Team Lead", "Production Supervisor"],
+    time: ["2017-Present", "2016-2017"],
     location: "Austin, TX",
     bullets: [
       <p className="section-item-bullet">
-        Create internal & external reports using <span className="hl">SQL</span>
+        Personally <span className="hl">built a SaaS MVP</span> for enterprise
+        customer, ran the first ever live demo
       </p>,
       <p className="section-item-bullet">
-        QA <span className="hl">React/Redux</span> apps & investigate bugs
+        Maintain & debug flagship <span className="hl">React/Rails</span> app
       </p>,
       <p className="section-item-bullet">
-        Troubleshoot internal <span className="hl">Rails</span> app
+        Build reports, data-visualizations with <span className="hl">SQL</span>
       </p>,
       <p className="section-item-bullet">
-        Manage a team of 75 remote contractors
+        Deploy updates & hotfixes to <span className="hl">iOS Django</span> app
       </p>,
       <p className="section-item-bullet">
-        Create tools to increase employee productivity
+        Monitor and manage <span className="hl">AWS</span> configurations
       </p>
     ]
   },
@@ -44,17 +45,13 @@ const items = [
         <span className="hl">Angular.js</span>
       </p>,
       <p className="section-item-bullet">
-        Iterate on <span className="hl">Node & Express.js</span> prototype
+        Iterate on <span className="hl">Node & Express.js</span> prototypes
       </p>,
       <p className="section-item-bullet">
-        Write custom <span className="hl">Ghost</span> templates for customers
+        Develop custom <span className="hl">Ghost</span> templates for clients
       </p>,
       <p className="section-item-bullet">
-        Design marketing collateral using{" "}
-        <span className="hl">Illustrator</span>
-      </p>,
-      <p className="section-item-bullet">
-        Implement B2C email retargeting campaigns
+        Design marketing collateral in <span className="hl">Illustrator</span>
       </p>
     ]
   },

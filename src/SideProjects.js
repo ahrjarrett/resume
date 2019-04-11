@@ -11,13 +11,15 @@ const items = [
   {
     title: null,
     location: null,
-    subtitle: "Elevate",
+    subtitle: "bkwds",
     time: "2019",
     bullets: [
       <p className="section-item-bullet">
         <a
           href="https://github.com/Lambda-School-Labs/LabsPT1_Backwoods"
           className="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Elevating the maps experience for active users
         </a>{" "}
@@ -28,13 +30,15 @@ const items = [
   {
     title: null,
     location: null,
-    subtitle: "React Speak",
+    subtitle: "react-speak",
     time: "2018",
     bullets: [
       <p className="section-item-bullet">
         <a
           href="https://github.com/ahrjarrett/react-speak"
           className="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           An HOC for Talking to Your Browser
         </a>{" "}
@@ -45,13 +49,15 @@ const items = [
   {
     title: null,
     location: null,
-    subtitle: "Polygon",
+    subtitle: "polygon",
     time: "2017",
     bullets: [
       <p className="section-item-bullet">
         <a
           href="https://github.com/ahrjarrett/polygon"
           className="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Google Maps for Realtors
         </a>{" "}

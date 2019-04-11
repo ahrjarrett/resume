@@ -28,5 +28,9 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
 
+  h1, h2, h3, h4, h5, h6,
+    p, li, ul, span, a {
+    color: ${props => props.theme.header};
+  }
 
 `

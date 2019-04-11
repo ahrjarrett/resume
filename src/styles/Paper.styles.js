@@ -86,6 +86,7 @@ export const PaperStyles = styled.div`
 
   .skill {
     border-color: ${props => props.theme.primaryLite};
+    color: ${props => props.theme.primary};
     border-style: solid;
     white-space: nowrap;
     margin-right: 0.25em;
@@ -113,6 +114,7 @@ export const PaperStyles = styled.div`
 
   .section-item-subtitle-left {
     font-weight: bold;
+    color: ${props => props.theme.header};
   }
 
   .section-item-content {
@@ -129,7 +131,7 @@ export const PaperStyles = styled.div`
     padding-top: 1.8em;
     padding-bottom: 1.8em;
     min-height: 100vh;
-    background-color: #dadada;
+    background-color: ${props => props.theme.offWhite};
   }
 
   @media not all and (max-width: 77rem) {
@@ -351,7 +353,7 @@ export const PaperStyles = styled.div`
   }
 
   .section-footer-link {
-    color: #000000;
+    color: ${props => props.theme.black};
     text-decoration-skip: ink;
     font-style: normal;
   }
@@ -398,7 +400,7 @@ export const PaperStyles = styled.div`
     padding-left: 4.1em;
     flex-grow: 1;
     line-height: 1.7;
-    color: #000000;
+    color: ${props => props.theme.black};
   }
 
   .action-button-link {

@@ -1,21 +1,13 @@
-#+TITLE: thegrepper.com
+#+TITLE: Resume
 #+AUTHOR: Andrew Jarrett
 
-Source code for [[https://thegrepper.com/][thegrepper.com]].
+Source code for [[https://resume.ahrjarrett.com/][resume.ahrjarrett.com]].
 
 * Developing
 
-#+BEGIN_SRC 
-$ yarn start
+#+BEGIN_SRC
+$ npm start
 #+END_SRC
-
-To push to production:
-
-#+BEGIN_SRC 
-$ git push live master
-#+END_SRC
-
-...where live is configured to point to your DigitalOcean droplet. Refer to bitbucket org-mode file for config options/documentation.
 
 * Make pdf
 

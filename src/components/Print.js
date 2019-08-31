@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { GlobalStyles } from "./styles/Global.styles"
-import { PaperStyles } from "./styles/Paper.styles"
-import Web from "./Web"
+import { GlobalStyles } from "styled/GlobalStyles"
+import * as S from "styled"
+import Web from "components/Web"
 
 export default class Print extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ export default class Print extends Component {
 
   render() {
     return (
-      <PaperStyles>
+      <S.Styled>
         <GlobalStyles />
         <Web
           classNames={
@@ -27,7 +27,7 @@ export default class Print extends Component {
           }
           hideSidebar={true}
         />
-      </PaperStyles>
+      </S.Styled>
     )
   }
 }

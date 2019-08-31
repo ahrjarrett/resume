@@ -1,5 +1,5 @@
 import React from "react"
-import Section from "./Section"
+import Section from "components/Section"
 
 const WorkExperience = () => (
   <div className="resume--right-column">

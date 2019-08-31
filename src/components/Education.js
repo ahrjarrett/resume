@@ -1,5 +1,5 @@
 import React from "react"
-import { SectionContainer } from "./Containers"
+import { SectionContainer } from "components/Containers"
 
 const items = [
   {

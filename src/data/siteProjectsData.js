@@ -1,17 +1,30 @@
 import React from "react"
-import Section from "./Section"
 
-const SideProjects = () => (
-  <div>
-    <Section heading="Projects" items={items} />
-  </div>
-)
-
-const items = [
+export const siteProjectsData = [
   {
     title: null,
     location: null,
-    subtitle: "bkwds",
+    subtitle: "Typelaunch",
+    time: "2019",
+    bullets: [
+      <p className="section-item-bullet">
+        FE architect for{" "}
+        <a
+          href="https://typelaunch.com"
+          className="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          website builder MVP
+        </a>
+        . 3 devs, 2 mo • <span className="hl">React / Express</span>
+      </p>
+    ]
+  },
+  {
+    title: null,
+    location: null,
+    subtitle: "Backwoods",
     time: "2019",
     bullets: [
       <p className="section-item-bullet">
@@ -54,7 +67,7 @@ const items = [
     bullets: [
       <p className="section-item-bullet">
         <a
-          href="https://github.com/ahrjarrett/polygon"
+          href="https://polygonpolygon.herokuapp.com"
           className="external-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -66,5 +79,3 @@ const items = [
     ]
   }
 ]
-
-export default SideProjects

@@ -27,7 +27,6 @@ export default function Meta() {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en" />
       <meta property="og:site_name" content={siteName} />
-
       <link rel="canonical" href={domain} />
       <link rel="dns-prefetch" href={dnsPrefetch} />
       <meta property="og:url" content={domain} />

@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyles = createGlobalStyle`
-
   html {
     font-family: Source Sans Pro, Trebuchet MS, sans-serif;
     text-rendering: optimizeLegibility;

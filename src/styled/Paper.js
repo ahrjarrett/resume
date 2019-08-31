@@ -1,15 +1,6 @@
 import styled from "styled-components"
-import { fontStyles } from "./Font.styles"
-import { animationStyles } from "./Animation.styles"
-import { printStyles } from "./Print.styles"
 
 export const PaperStyles = styled.div`
-  overflow: "hidden";
-
-  ${fontStyles};
-  ${animationStyles};
-  ${printStyles};
-
   .job-title {
     margin-top: 0.6em;
     margin-bottom: 0.1em;
@@ -468,7 +459,7 @@ export const PaperStyles = styled.div`
     flex-direction: row;
   }
 
-  /* Only add left margin if subtitle is 
+  /* Only add left margin if subtitle is
    * general sibling of title */
   .section-item-title ~ .section-item-subtitle {
     margin-left: 0.8em;

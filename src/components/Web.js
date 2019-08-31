@@ -1,9 +1,9 @@
 import React from "react"
-import Sidebar from "./Sidebar"
-import Header from "./Header"
-import HorizontalRule from "./HorizontalRule"
-import Main from "./Main"
-import Footer from "./Footer"
+import Sidebar from "components/Sidebar"
+import Header from "components/Header"
+import HorizontalRule from "components/HorizontalRule"
+import Main from "components/Main"
+import Footer from "components/Footer"
 
 const Web = ({ classNames = "", hideSidebar = false, makePdf = false }) => (
   <div className={classNames}>

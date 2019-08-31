@@ -1,8 +1,8 @@
 import React from "react"
-import TechSkills from "./Skills"
-import SideProjects from "./SideProjects"
-import Education from "./Education"
-import WorkExperience from "./WorkExperience"
+import TechSkills from "components/Skills"
+import SideProjects from "components/SideProjects"
+import Education from "components/Education"
+import WorkExperience from "components/WorkExperience"
 
 const Main = () => (
   <main className="Main">

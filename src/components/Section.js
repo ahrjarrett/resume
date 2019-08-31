@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { SectionContainer } from './Containers'
-import SectionItem from './SectionItem'
+import { SectionContainer } from 'components/Containers'
+import SectionItem from 'components/SectionItem'
 
 export default class Section extends Component {
 

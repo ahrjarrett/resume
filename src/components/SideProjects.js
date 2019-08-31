@@ -1,5 +1,5 @@
 import React from "react"
-import Section from "./Section"
+import Section from "components/Section"
 
 const SideProjects = () => (
   <div>
@@ -11,7 +11,24 @@ const items = [
   {
     title: null,
     location: null,
-    subtitle: "bkwds",
+    subtitle: "Typelaunch",
+    time: "2019",
+    bullets: [
+      <p className="section-item-bullet">
+        “<a
+          href="https://typelaunch.com"
+          className="external-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Simpler than Wix
+    </a>” - MVP, team of 2 • <span className="hl">React Hooks / Express</span></p>
+    ],
+  },
+  {
+    title: null,
+    location: null,
+    subtitle: "Backwoods",
     time: "2019",
     bullets: [
       <p className="section-item-bullet">
@@ -54,7 +71,7 @@ const items = [
     bullets: [
       <p className="section-item-bullet">
         <a
-          href="https://github.com/ahrjarrett/polygon"
+          href="https://polygonpolygon.herokuapp.com"
           className="external-link"
           target="_blank"
           rel="noopener noreferrer"

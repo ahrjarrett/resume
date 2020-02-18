@@ -1,5 +1,21 @@
-import React from "react"
-import { SectionContainer } from "components/Containers"
+import React from 'react'
+import {SectionContainer} from 'components/Containers'
+
+const skills = [
+  'TypeScript',
+  'Python',
+  'Clojure',
+  'React',
+  'GraphQL',
+  'Node.js',
+  'Redux',
+  'AWS',
+  'GCP',
+  'SQL',
+  'D3',
+]
+
+const Skill = ({skill}) => <span className="skill">{skill}</span>
 
 const Skills = () => (
   <SectionContainer>
@@ -8,17 +24,9 @@ const Skills = () => (
       <div className="hr-left" />
       <div className="section-item-content languages">
         <p className="skills-wrapper">
-          <span className="skill">TypeScript</span>
-          <span className="skill">JavaScript</span>
-          <span className="skill">React</span>
-          <span className="skill">AWS</span>
-          <span className="skill">GraphQL</span>
-          <span className="skill">Node.js</span>
-          <span className="skill">SQL</span>
-          <span className="skill">Python</span>
-          <span className="skill">Clojure</span>
-          <span className="skill">OCaml</span>
-          <span className="skill">TDD</span>
+          {skills.map(skill => (
+            <Skill skill={skill} key={skill} />
+          ))}
         </p>
       </div>
     </div>

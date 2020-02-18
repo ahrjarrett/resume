@@ -1,22 +1,11 @@
-import React from "react"
+import React from 'react'
 
 const Header = () => (
   <div className="Header">
     <div className="header-left">
       <h1 className="full-name">Andrew Jarrett</h1>
-      <p className="job-title">Software developer</p>
-      <p className="header-cta">
-        View my portfolio at{" "}
-        <a
-          className="section-footer-link"
-          href="https://portfolio.ahrjarrett.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          portfolio.ahrjarrett.com
-          <img alt="" className="resume-icon" src="svg/link.svg" />
-        </a>
-      </p>
+      <p className="job-title">Software Engineer, Data Viz Nerd 📈</p>
+      <p className="mini-bio" />
     </div>
     <nav className="nav-contact">
       <a className="external-link" href="mailto:ahrjarrett@gmail.com">
@@ -48,5 +37,20 @@ const Header = () => (
     </nav>
   </div>
 )
+
+/*
+  <p className="header-cta">
+  View my portfolio at{" "}
+  <a
+  className="section-footer-link"
+  href="https://portfolio.ahrjarrett.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  >
+  portfolio.ahrjarrett.com
+  <img alt="" className="resume-icon" src="svg/link.svg" />
+  </a>
+  </p>
+  */
 
 export default Header

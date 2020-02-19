@@ -1,5 +1,8 @@
 import React from 'react'
 
+const HL = ({children}) => <span className="hl">{children}</span>
+const Bullet = ({children}) => <Bullet>{children}</Bullet>
+
 export const workExperienceData = [
   {
     title: 'LOU Assistant',
@@ -7,21 +10,17 @@ export const workExperienceData = [
     time: '2019-Present',
     location: 'Austin, TX',
     bullets: [
-      <p className="section-item-bullet">
-        Built <span className="hl">custom SSR payment flow</span> into dashboard so people can pay
-        us
-      </p>,
+      <Bullet>
+        Built <HL>custom SSR payment flow</HL> into dashboard so people can pay us
+      </Bullet>,
 
-      <p className="section-item-bullet">
-        Built Clojure-inspired npm library called LOUtils for data pipelines composition
-      </p>,
-      <p className="section-item-bullet">
-        <span className="hl">Reverse engineer a competitor's Chrome Extension</span> to demonstrate
-        proof of concept
-      </p>,
-      <p className="section-item-bullet">
-        As the sole engineer on a 4-person team, handle any/everything dev-related
-      </p>,
+      <Bullet>
+        Built Clojure-inspired npm library called LOUtils for data pipeline composition
+      </Bullet>,
+      <Bullet>
+        <HL>Reverse engineer a competitor's Chrome Extension</HL> to demonstrate proof of concept
+      </Bullet>,
+      <Bullet>As the sole engineer on a 4-person team, handle any/everything dev-related</Bullet>,
     ],
   },
 
@@ -31,20 +30,18 @@ export const workExperienceData = [
     time: ['2018-Present', '2016-2018'],
     location: 'Austin, TX',
     bullets: [
-      <p className="section-item-bullet">
-        <span className="hl">Frontend Architect</span> for Typelaunch MVP
-      </p>,
-      <p className="section-item-bullet">
-        Develop & maintain flagship <span className="hl">React/Rails</span> app
-      </p>,
-      <p className="section-item-bullet">
-        Configure & scale network of internal <span className="hl">GCP apps</span> with{' '}
-        <span className="hl">Kubernetes containers</span>
-      </p>,
-      <p className="section-item-bullet">
-        Build custom reports, data-viz with <span className="hl">SQL</span> &{' '}
-        <span className="hl">D3</span>
-      </p>,
+      <Bullet>
+        <HL>Frontend Architect</HL> for Typelaunch MVP
+      </Bullet>,
+      <Bullet>
+        Develop & maintain flagship <HL>React/Rails</HL> app
+      </Bullet>,
+      <Bullet>
+        Configure & scale network of internal <HL>GCP apps</HL> with <HL>Kubernetes containers</HL>
+      </Bullet>,
+      <Bullet>
+        Build custom reports, data-viz with <HL>SQL</HL> & <HL>D3</HL>
+      </Bullet>,
     ],
   },
   {
@@ -53,16 +50,12 @@ export const workExperienceData = [
     time: '2015-2016',
     location: 'Austin, TX',
     bullets: [
-      <p className="section-item-bullet">Design FollowClosely website</p>,
-      <p className="section-item-bullet">
-        Develop client portal & analytics dashboard from scratch
-      </p>,
-      <p className="section-item-bullet">
-        Iterate on internal prototypes using <span className="hl">Node & Express.js</span>
-      </p>,
-      <p className="section-item-bullet">
-        Build website generator product for clients & mange all deployments
-      </p>,
+      <Bullet>Design FollowClosely website</Bullet>,
+      <Bullet>Develop client portal & analytics dashboard from scratch</Bullet>,
+      <Bullet>
+        Iterate on internal prototypes using <HL>Node & Express.js</HL>
+      </Bullet>,
+      <Bullet>Build website generator product for clients & mange all deployments</Bullet>,
     ],
   },
 ]
@@ -73,7 +66,7 @@ export const workExperienceData = [
 //   time: '2012-2014',
 //   location: 'Austin, TX',
 //   bullets: [
-//     <p className='section-item-bullet'>#1 manager company-wide Q3 & Q4 2014</p>,
+//     <Bullet>#1 manager company-wide Q3 & Q4 2014</Bullet>,
 //   ]
 // },
 
@@ -83,23 +76,23 @@ export const workExperienceData = [
 //  time: ["2017-Present", "2016-2017"],
 //  location: "Austin, TX",
 //  bullets: [
-//    <p className="section-item-bullet">
-//      Personally <span className="hl">built a SaaS MVP</span> for enterprise
+//    <Bullet>
+//      Personally <HL >built a SaaS MVP</HL> for enterprise
 //      <br />
 //      customer, ran the first ever live demo
-//    </p>,
-//    <p className="section-item-bullet">
-//      Maintain & debug flagship <span className="hl">React/Rails</span> app
-//    </p>,
-//    <p className="section-item-bullet">
-//      Build reports, data-visualizations with <span className="hl">SQL</span>
-//    </p>,
-//    <p className="section-item-bullet">
-//      Deploy updates & hotfixes to <span className="hl">iOS Django</span> app
-//    </p>,
-//    <p className="section-item-bullet">
+//    </Bullet>,
+//    <Bullet>
+//      Maintain & debug flagship <HL >React/Rails</HL> app
+//    </Bullet>,
+//    <Bullet>
+//      Build reports, data-visualizations with <HL >SQL</HL>
+//    </Bullet>,
+//    <Bullet>
+//      Deploy updates & hotfixes to <HL >iOS Django</HL> app
+//    </Bullet>,
+//    <Bullet>
 //      Monitor and manage <span className="hl">AWS</span> configurations
-//    </p>
+//    </Bullet>
 //  ]
 //},
 
@@ -109,12 +102,12 @@ export const workExperienceData = [
 //    time: "2014-2015",
 //    location: "Austin, TX",
 //    bullets: [
-//            <p className="section-item-bullet">
+//            <Bullet>
 //            Manage social media profiles for 100+ clients
-//                                         </p>,
-//                                         <p className="section-item-bullet">Top 5% of sales floor Q1 & Q2 2015</p>,
-//                                         <p className="section-item-bullet">
+//                                         </Bullet>,
+//                                         <Bullet>Top 5% of sales floor Q1 & Q2 2015</Bullet>,
+//                                         <Bullet>
 //                                         Brought in over $1,000,000 in new business
-//                                         </p>
+//                                         </Bullet>
 //                                         ]
 //}

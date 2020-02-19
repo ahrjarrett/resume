@@ -1,7 +1,7 @@
 import React from 'react'
 
 const HL = ({children}) => <span className="hl">{children}</span>
-const Bullet = ({children}) => <Bullet>{children}</Bullet>
+const Bullet = ({children}) => <p className="section-item-bullet">{children}</p>
 
 export const workExperienceData = [
   {

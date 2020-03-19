@@ -1,7 +1,7 @@
 import React from 'react'
 
-const HL = ({children}) => <span className="hl">{children}</span>
-const Bullet = ({children}) => <p className="section-item-bullet">{children}</p>
+const HL = ({ children }) => <span className='hl'>{children}</span>
+const Bullet = ({ children }) => <p className='section-item-bullet'>{children}</p>
 
 export const workExperienceData = [
   {
@@ -11,16 +11,23 @@ export const workExperienceData = [
     location: 'Austin, TX',
     bullets: [
       <Bullet>
-        Built <HL>custom SSR payment flow</HL> into dashboard so people can pay us
+        Maintain & extend /LOUD/, an internal component library built with
+        TypeScript & Storybook; refactored to React Hooks & isomorphic rendering
+        Built Stripe integration into customer dashboard using Next.js to build
+        packages, generate quotes, setup payment intents & handle subscription
+        payments (previously done over the phone) Built{' '}
       </Bullet>,
 
       <Bullet>
-        Built Clojure-inspired npm library called LOUtils for data pipeline composition
+        Built Clojure-inspired npm library called LOUtils for data pipeline
+        composition
       </Bullet>,
       <Bullet>
-        <HL>Reverse engineer a competitor's Chrome Extension</HL> to demonstrate proof of concept
+        Created a custom webpack build process for developing a proprietary
+        Chrome Extension; extend Redux DevTools, write middleware layer called
+        "Broken Spoke" for exposing runtime errors, tracing exceptions, user
+        analytics proof of concept
       </Bullet>,
-      <Bullet>As the sole engineer on a 4-person team, handle any/everything dev-related</Bullet>,
     ],
   },
 
@@ -31,13 +38,12 @@ export const workExperienceData = [
     location: 'Austin, TX',
     bullets: [
       <Bullet>
+        a simple React & Webpack configuration that allowed for incremental
+        adoption & improved image processing in our legacy Rails App's data
+        pipeline
+      </Bullet>,
+      <Bullet>
         <HL>Frontend Architect</HL> for Typelaunch MVP
-      </Bullet>,
-      <Bullet>
-        Develop & maintain flagship <HL>React/Rails</HL> app
-      </Bullet>,
-      <Bullet>
-        Configure & scale network of internal <HL>GCP apps</HL> with <HL>Kubernetes containers</HL>
       </Bullet>,
       <Bullet>
         Build custom reports, data-viz with <HL>SQL</HL> & <HL>D3</HL>
@@ -55,7 +61,9 @@ export const workExperienceData = [
       <Bullet>
         Iterate on internal prototypes using <HL>Node & Express.js</HL>
       </Bullet>,
-      <Bullet>Build website generator product for clients & mange all deployments</Bullet>,
+      <Bullet>
+        Build website generator product for clients & mange all deployments
+      </Bullet>,
     ],
   },
 ]

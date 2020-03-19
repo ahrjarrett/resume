@@ -11,23 +11,23 @@ export const workExperienceData = [
     location: 'Austin, TX',
     bullets: [
       <Bullet>
-        Maintain & extend /LOUD/, an internal component library built with
-        TypeScript & Storybook; refactored to React Hooks & isomorphic rendering
+        Maintain & extend LOUD, an internal component library built with
+        <HL>TypeScript & Storybook</HL>; refactored to use React Hooks &
+        isomorphic rendering
       </Bullet>,
       <Bullet>
-        Built Stripe integration into customer dashboard using Next.js to build
-        packages, generate quotes, setup payment intents & handle subscription
-        payments (previously done over the phone)
+        Built <HL>Stripe integration</HL> into customer dashboard using Next.js
+        to build packages, generate quotes, setup payment intents & handle
+        subscription payments
       </Bullet>,
-
       <Bullet>
         Built Clojure-inspired npm library called LOUtils for data pipeline
         composition
       </Bullet>,
       <Bullet>
         Created a custom webpack build process for developing an internal Chrome
-        Extension; extend Redux DevTools, write middleware layer for exposing
-        runtime errors, tracing exceptions, user analytics
+        Extension; extend Redux DevTools; write middleware layer for exposing
+        runtime errors, exceptions & user analytics
       </Bullet>,
     ],
   },

@@ -13,9 +13,11 @@ export const workExperienceData = [
       <Bullet>
         Maintain & extend /LOUD/, an internal component library built with
         TypeScript & Storybook; refactored to React Hooks & isomorphic rendering
+      </Bullet>,
+      <Bullet>
         Built Stripe integration into customer dashboard using Next.js to build
         packages, generate quotes, setup payment intents & handle subscription
-        payments (previously done over the phone) Built{' '}
+        payments (previously done over the phone)
       </Bullet>,
 
       <Bullet>
@@ -23,10 +25,9 @@ export const workExperienceData = [
         composition
       </Bullet>,
       <Bullet>
-        Created a custom webpack build process for developing a proprietary
-        Chrome Extension; extend Redux DevTools, write middleware layer called
-        "Broken Spoke" for exposing runtime errors, tracing exceptions, user
-        analytics proof of concept
+        Created a custom webpack build process for developing an internal Chrome
+        Extension; extend Redux DevTools, write middleware layer for exposing
+        runtime errors, tracing exceptions, user analytics
       </Bullet>,
     ],
   },
@@ -34,13 +35,13 @@ export const workExperienceData = [
   {
     title: 'OwnLocal',
     subtitle: ['Software Engineer', 'Production Team Lead'],
-    time: ['2018-Present', '2016-2018'],
+    time: ['2018-2019', '2016-2018'],
     location: 'Austin, TX',
     bullets: [
       <Bullet>
-        a simple React & Webpack configuration that allowed for incremental
-        adoption & improved image processing in our legacy Rails App's data
-        pipeline
+        My first PR was a simple React & Webpack configuration on our legacy
+        Rails app that created a path for incremental adoption; as a bonus, also
+        improved image processing in our data pipeline
       </Bullet>,
       <Bullet>
         <HL>Frontend Architect</HL> for Typelaunch MVP

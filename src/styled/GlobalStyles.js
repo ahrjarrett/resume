@@ -1,8 +1,9 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   html {
-    font-family: Source Sans Pro, Trebuchet MS, sans-serif;
+    font-family: Larsseit;
+font-weight: 500;
     text-rendering: optimizeLegibility;
     -webkit-font-variant-ligatures: common-ligatures;
     font-variant-ligatures: common-ligatures;

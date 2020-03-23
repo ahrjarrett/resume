@@ -22,8 +22,6 @@ const black = 'hsla(345, 6%, 13%, 1.0)'
 const header = 'hsla(348, 4%, 24%, 1.0)'
 const text = black
 
-const yellow = 'hsla(58, 70%, 91%,1)'
-
 export const theme = {
   primary,
   accent,

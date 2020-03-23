@@ -108,7 +108,7 @@ export const PaperStyles = styled.div`
   }
 
   .section-item-subtitle-left {
-    font-weight: bold;
+    font-weight: 500;
     color: ${props => props.theme.header};
   }
 
@@ -160,7 +160,7 @@ background-color: white;
     margin-top: 0;
     margin-bottom: 0.05em;
     font-size: 1.9em;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .svg-home {
@@ -231,6 +231,7 @@ background-color: white;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0.8em;
+font-weight: 300;
   }
 
   .section-item-title ~ .section-item-bullet {
@@ -304,7 +305,7 @@ background-color: white;
     margin-bottom: 0;
     line-height: 1;
     font-size: 3.6em;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .footer-cta {
@@ -359,7 +360,7 @@ background-color: white;
   }
 
   .hl {
-    font-weight: bold;
+    font-weight: 400;;
     color: ${props => props.theme.primary};
   }
 

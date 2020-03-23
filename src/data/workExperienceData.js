@@ -1,46 +1,51 @@
 import React from 'react'
 
-const HL = ({children}) => <span className="hl">{children}</span>
-const Bullet = ({children}) => <p className="section-item-bullet">{children}</p>
+const HL = ({ children }) => <span className='hl'>{children}</span>
+const Bullet = ({ children }) => <p className='section-item-bullet'>{children}</p>
 
 export const workExperienceData = [
   {
     title: 'LOU Assistant',
     subtitle: 'Software Engineer',
-    time: '2019-Present',
+    time: 'Oct 2019 - Mar 2020',
     location: 'Austin, TX',
     bullets: [
       <Bullet>
-        Built <HL>custom SSR payment flow</HL> into dashboard so people can pay us
+        <HL>Integrate Stripe</HL> into our product, write FE & BE fstests to
+        make sure it stays there
       </Bullet>,
 
       <Bullet>
-        Built Clojure-inspired npm library called LOUtils for data pipeline composition
+        Write LOUtils, a <HL>tiny utility library </HL>that DRY-ed out our
+        frontend code without destroying it
       </Bullet>,
+
       <Bullet>
-        <HL>Reverse engineer a competitor's Chrome Extension</HL> to demonstrate proof of concept
+        Create webpack build for in-house Chrome Extension,{' '}
+        <HL>extend Redux DevTools</HL> to talk to it
       </Bullet>,
-      <Bullet>As the sole engineer on a 4-person team, handle any/everything dev-related</Bullet>,
     ],
   },
 
   {
     title: 'OwnLocal',
     subtitle: ['Software Engineer', 'Production Team Lead'],
-    time: ['2018-Present', '2016-2018'],
+    time: ['Apr 2018 - Sept 2019', 'Aug 2016 - Apr 2018'],
     location: 'Austin, TX',
     bullets: [
       <Bullet>
         <HL>Frontend Architect</HL> for Typelaunch MVP
       </Bullet>,
       <Bullet>
-        Develop & maintain flagship <HL>React/Rails</HL> app
+        Monitor & maintain flagship <HL>React/Rails</HL> app
       </Bullet>,
       <Bullet>
-        Configure & scale network of internal <HL>GCP apps</HL> with <HL>Kubernetes containers</HL>
+        Configure Kubernetes to scale network of 100+ <HL>GCP apps</HL> to meet
+        demand for product launch
       </Bullet>,
       <Bullet>
-        Build custom reports, data-viz with <HL>SQL</HL> & <HL>D3</HL>
+        Write <HL>PostgreSQL</HL> queries & thin <HL>D3 client</HL> that enabled
+        sales to track their KPIs in real time
       </Bullet>,
     ],
   },
@@ -51,11 +56,14 @@ export const workExperienceData = [
     location: 'Austin, TX',
     bullets: [
       <Bullet>Design FollowClosely website</Bullet>,
-      <Bullet>Develop client portal & analytics dashboard from scratch</Bullet>,
+      <Bullet>
+        <HL>Build client portal</HL> & analytics dashboard
+      </Bullet>,
       <Bullet>
         Iterate on internal prototypes using <HL>Node & Express.js</HL>
+        Build website generator in Node & Express to streamline new customer
+        launches
       </Bullet>,
-      <Bullet>Build website generator product for clients & mange all deployments</Bullet>,
     ],
   },
 ]

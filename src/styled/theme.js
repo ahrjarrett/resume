@@ -5,7 +5,9 @@
 //
 //const primary = '#326331'
 
-const primary = 'rgb(68, 129, 68)'
+//const primary = 'rgb(68, 129, 68)'
+
+const primary = '#438e46'
 
 const primaryLite = 'rgb(226, 225, 213)'
 //const primaryLite = 'hsla(219, 83%, 79%, 1.0)'

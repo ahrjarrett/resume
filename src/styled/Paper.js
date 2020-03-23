@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const PaperStyles = styled.div`
   .job-title {
@@ -126,7 +126,11 @@ export const PaperStyles = styled.div`
     padding-top: 1.8em;
     padding-bottom: 1.8em;
     min-height: 100vh;
-    background-color: ${props => props.theme.offWhite};
+    //background-color: ${props => props.theme.offWhite};
+    //background-color: rgb(255, 255, 223);
+    //background-color: #e2e0d4;
+    //rgb(216, 222, 233);
+background-color: white;
   }
 
   @media not all and (max-width: 77rem) {
@@ -234,7 +238,7 @@ export const PaperStyles = styled.div`
   }
 
   .section-item-bullet::before {
-    content: "-";
+    content: '-';
     position: absolute;
     margin-top: 0;
     margin-left: -0.8em;
@@ -349,6 +353,7 @@ export const PaperStyles = styled.div`
 
   .section-footer-link {
     color: ${props => props.theme.black};
+   background: rgba(255, 255, 223, 0.5);
     text-decoration-skip: ink;
     font-style: normal;
   }
@@ -403,7 +408,7 @@ export const PaperStyles = styled.div`
     border-color: rgb(17, 17, 17);
     border-width: 2px;
     border-radius: 14px;
-    box-shadow: 5px 5px 0 -1px ${props => props.theme.accent};
+    box-shadow: 5px 5px 0 -1px #e2e1d5;
     padding-right: 0.8em;
     padding-left: 0.8em;
     line-height: 2.1;

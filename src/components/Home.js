@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 const ThemeContext = React.createContext()
 
@@ -32,10 +32,10 @@ class ThemeProvider extends Component {
 
 const ThemeToggler = () => (
   <ThemeContext.Consumer>
-    {({toggleTheme, theme}) => (
+    {({ toggleTheme, theme }) => (
       <p>
-        1.{' '}
-        <a href="/" onClick={toggleTheme}>
+        1.{/* ' ' */}
+        <a href='/' onClick={toggleTheme}>
           Toggle light/dark theme
         </a>
       </p>
@@ -46,26 +46,30 @@ const ThemeToggler = () => (
 const Home = () => (
   <ThemeProvider>
     <ThemeContext.Consumer>
-      {({theme}) => (
-        <div id="Home" className={theme}>
-          <div className="theme-wrapper">
-            <h1 id="andrew-jarrett" style={{display: 'none'}}>
+      {({ theme }) => (
+        <div id='Home' className={theme}>
+          <div className='theme-wrapper'>
+            <h1 id='andrew-jarrett' style={{ display: 'none' }}>
               I’m Andrew Jarrett
             </h1>
-            <div className="home-wrapper">
+            <div className='home-wrapper'>
               <article>
                 <br />
                 <ul>
-                  <li className="org-bullet-1">
+                  <li className='org-bullet-1'>
                     <p>
                       <span>I’m Andrew Jarrett</span>
                     </p>
                   </li>
                   <br />
-                  <li className="org-bullet-2">
+                  <li className='org-bullet-2'>
                     <span>
                       I am a Production Team Lead at{' '}
-                      <a href="https://ownlocal.com" rel="noopener noreferrer" target="_blank">
+                      <a
+                        href='https://ownlocal.com'
+                        rel='noopener noreferrer'
+                        target='_blank'
+                      >
                         OwnLocal
                       </a>{' '}
                       and a lover of all things functional programming.
@@ -76,21 +80,21 @@ const Home = () => (
                   <p>
                     - Currently I’m reading{' '}
                     <a
-                      href="https://www.amazon.com/Mock-Mockingbird-Raymond-Smullyan/dp/0192801422"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href='https://www.amazon.com/Mock-Mockingbird-Raymond-Smullyan/dp/0192801422'
+                      rel='noopener noreferrer'
+                      target='_blank'
                     >
                       To Mock a Mockingbird
                     </a>
                   </p>
                   <br />
-                  <li className="org-bullet-2">
+                  <li className='org-bullet-2'>
                     <span>
                       I went to undergrad at Northwestern University’s{' '}
                       <a
-                        href="https://www.weinberg.northwestern.edu/"
-                        rel="noopener noreferrer"
-                        target="_blank"
+                        href='https://www.weinberg.northwestern.edu/'
+                        rel='noopener noreferrer'
+                        target='_blank'
                       >
                         Weinberg College of Arts & Sciences
                       </a>
@@ -98,36 +102,43 @@ const Home = () => (
                     </span>
                   </li>
                   <br />
-                  <li className="org-bullet-2">About me</li>
+                  <li className='org-bullet-2'>About me</li>
                   <br />
-                  <p className="src-block src-header">
-                    <span className="">Description</span>:
+                  <p className='src-block src-header'>
+                    <span className=''>Description</span>:
                   </p>
-                  <p className="src-block">
-                    I grew up in Denver and now live in Austin, Texas. My dog is named Ash and he’s
-                    cute as hell but also a tortured soul.
+                  <p className='src-block'>
+                    I grew up in Denver and now live in Austin, Texas. My dog is
+                    named Ash and he’s cute as hell but also a tortured soul.
                   </p>
                   <br />
-                  <li className="org-bullet-2">Hire me</li>
+                  <li className='org-bullet-2'>Hire me</li>
                   <br />
                   <p>
                     - Here's a link to my{' '}
-                    <Link tabIndex="1" to="/resume" className="error home-resume-link">
+                    <Link
+                      tabIndex='1'
+                      to='/resume'
+                      className='error home-resume-link'
+                    >
                       resume
                     </Link>
                   </p>
                   <br />
-                  <li className="org-bullet-3">Contact info</li>
+                  <li className='org-bullet-3'>Contact info</li>
                   <br />
                   <p>
-                    - <a href="mailto:ahrjarrett@gmail.com">ahrjarrett@gmail.com</a>
+                    -{' '}
+                    <a href='mailto:ahrjarrett@gmail.com'>
+                      ahrjarrett@gmail.com
+                    </a>
                   </p>
                   <p>
                     -{' '}
                     <a
-                      href="https://github.com/ahrjarrett/"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href='https://github.com/ahrjarrett/'
+                      rel='noopener noreferrer'
+                      target='_blank'
                     >
                       GitHub
                     </a>
@@ -135,26 +146,27 @@ const Home = () => (
                   <p>
                     -{' '}
                     <a
-                      href="https://www.linkedin.com/in/andrewhjarrett/"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href='https://www.linkedin.com/in/andrewhjarrett/'
+                      rel='noopener noreferrer'
+                      target='_blank'
                     >
                       LinkedIn
                     </a>
                   </p>
                   <br />
-                  <li className="org-bullet-3">Other cool stuff</li>
+                  <li className='org-bullet-3'>Other cool stuff</li>
                   <br />
                   <ThemeToggler />
                   <p>
-                    2. <a href="https://blog.thegrepper.com/">Perfunctory blog</a>
+                    2.{' '}
+                    <a href='https://blog.thegrepper.com/'>Perfunctory blog</a>
                   </p>
                   <p>
                     3.{' '}
                     <a
-                      href="https://github.com/fniessen/emacs-leuven-theme"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href='https://github.com/fniessen/emacs-leuven-theme'
+                      rel='noopener noreferrer'
+                      target='_blank'
                     >
                       Leuven
                     </a>
@@ -163,9 +175,9 @@ const Home = () => (
                   <p>
                     4.{' '}
                     <a
-                      href="https://github.com/ahrjarrett/.emacs.d/"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href='https://github.com/ahrjarrett/.emacs.d/'
+                      rel='noopener noreferrer'
+                      target='_blank'
                     >
                       My Emacs config
                     </a>
@@ -173,9 +185,9 @@ const Home = () => (
                   <p>
                     5.{' '}
                     <a
-                      href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html"
-                      rel="noopener noreferrer"
-                      target="_blank"
+                      href='http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html'
+                      rel='noopener noreferrer'
+                      target='_blank'
                     >
                       Functors, Applicatives, And Monads In Pictures
                     </a>
@@ -184,8 +196,8 @@ const Home = () => (
                   <br />
                 </ul>
 
-                <div className="home-copyright">
-                  <span className="copyright-symbol">©</span> Andrew Jarrett{' '}
+                <div className='home-copyright'>
+                  <span className='copyright-symbol'>©</span> Andrew Jarrett{' '}
                   {1900 + new Date().getYear()}
                 </div>
               </article>

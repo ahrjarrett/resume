@@ -11,7 +11,7 @@ export const workExperienceData = [
     location: 'Austin, TX',
     bullets: [
       <Bullet>
-        <HL>Integrate Stripe</HL> into our product, write FE & BE fstests to
+        <HL>Integrate Stripe</HL> into our product, write FE & BE tests that
         make sure it stays there
       </Bullet>,
 
@@ -30,7 +30,7 @@ export const workExperienceData = [
   {
     title: 'OwnLocal',
     subtitle: ['Software Engineer', 'Production Team Lead'],
-    time: ['Apr 2018 - Sept 2019', 'Aug 2016 - Apr 2018'],
+    time: ["Apr '18 - Sept '19", "Aug '16 - Apr '18"],
     location: 'Austin, TX',
     bullets: [
       <Bullet>
@@ -40,8 +40,8 @@ export const workExperienceData = [
         Monitor & maintain flagship <HL>React/Rails</HL> app
       </Bullet>,
       <Bullet>
-        Configure Kubernetes to scale network of 100+ <HL>GCP apps</HL> to meet
-        demand for product launch
+        Configure Kubernetes to scale network of 100+ <HL>GCP apps</HL> to
+        handle product launch
       </Bullet>,
       <Bullet>
         Write <HL>PostgreSQL</HL> queries & thin <HL>D3 client</HL> that enabled
@@ -60,9 +60,8 @@ export const workExperienceData = [
         <HL>Build client portal</HL> & analytics dashboard
       </Bullet>,
       <Bullet>
-        Iterate on internal prototypes using <HL>Node & Express.js</HL>
-        Build website generator in Node & Express to streamline new customer
-        launches
+        Build website generator in <HL>Node & Express</HL> to streamline new
+        customer launches
       </Bullet>,
     ],
   },

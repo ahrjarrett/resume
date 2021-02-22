@@ -1,14 +1,39 @@
-import React from 'react'
+import React from "react"
 
-const HL = ({ children }) => <span className='hl'>{children}</span>
-const Bullet = ({ children }) => <p className='section-item-bullet'>{children}</p>
+const HL = ({ children }) => <span className="hl">{children}</span>
+const Bullet = ({ children }) => (
+  <p className="section-item-bullet">{children}</p>
+)
 
 export const workExperienceData = [
   {
-    title: 'LOU Assistant',
-    subtitle: 'Software Engineer',
-    time: 'Oct 2019 - Mar 2020',
-    location: 'Austin, TX',
+    title: "Kazoo",
+    subtitle: "Software Engineer II",
+    time: "May 2020 - Feb 2021",
+    location: "Austin, TX (Remote)",
+    bullets: [
+      <Bullet>
+        <HL>
+          Build & maintain data visualizations across all product dashboards
+        </HL>
+      </Bullet>,
+      <Bullet>
+        Aggregate data from various PostgreSQL & MongoDB databases using Scala
+        Databricks notebooks & GCP BigQuery warehouses
+      </Bullet>,
+      <Bullet>Manage team of contractors to delegate & review work</Bullet>,
+      <Bullet>
+        Work closely with Architecture team to expose new measures via GraphQL;
+        deployed `fp-ts` library into production in an effort to improve type
+        safety
+      </Bullet>
+    ]
+  },
+  {
+    title: "LOU Assistant",
+    subtitle: "Software Engineer",
+    time: "Oct 2019 - Mar 2020",
+    location: "Austin, TX",
     bullets: [
       <Bullet>
         <HL>Integrate Stripe</HL> into our product, write FE & BE tests that
@@ -16,22 +41,22 @@ export const workExperienceData = [
       </Bullet>,
 
       <Bullet>
-        Write LOUtils, a <HL>tiny utility library </HL>that DRY-ed out our
+        Authored LOUtils, a <HL>tiny utility library </HL>that DRY-ed out our
         frontend code without destroying it
       </Bullet>,
 
       <Bullet>
-        Create webpack build for in-house Chrome Extension,{' '}
+        Create webpack build for in-house Chrome Extension,{" "}
         <HL>extend Redux DevTools</HL> to talk to it
-      </Bullet>,
-    ],
+      </Bullet>
+    ]
   },
 
   {
-    title: 'OwnLocal',
-    subtitle: ['Software Engineer', 'Production Team Lead'],
+    title: "OwnLocal",
+    subtitle: ["Software Engineer", "Production Team Lead"],
     time: ["Apr '18 - Sept '19", "Aug '16 - Apr '18"],
-    location: 'Austin, TX',
+    location: "Austin, TX (Remote)",
     bullets: [
       <Bullet>
         <HL>Frontend Architect</HL> for Typelaunch MVP
@@ -46,25 +71,25 @@ export const workExperienceData = [
       <Bullet>
         Write <HL>PostgreSQL</HL> queries & thin <HL>D3 client</HL> that enabled
         sales to track their KPIs in real time
-      </Bullet>,
-    ],
-  },
-  {
-    title: 'FollowClosely',
-    subtitle: 'Frontend Developer',
-    time: '2015-2016',
-    location: 'Austin, TX',
-    bullets: [
-      <Bullet>Design FollowClosely website</Bullet>,
-      <Bullet>
-        <HL>Build client portal</HL> & analytics dashboard
-      </Bullet>,
-      <Bullet>
-        Build website generator in <HL>Node & Express</HL> to streamline new
-        customer launches
-      </Bullet>,
-    ],
-  },
+      </Bullet>
+    ]
+  }
+  // {
+  //   title: "FollowClosely",
+  //   subtitle: "Frontend Developer",
+  //   time: "2015-2016",
+  //   location: "Austin, TX",
+  //   bullets: [
+  //     <Bullet>Design FollowClosely website</Bullet>,
+  //     <Bullet>
+  //       <HL>Build client portal</HL> & analytics dashboard
+  //     </Bullet>,
+  //     <Bullet>
+  //       Build website generator in <HL>Node & Express</HL> to streamline new
+  //       customer launches
+  //     </Bullet>
+  //   ]
+  // }
 ]
 
 // {

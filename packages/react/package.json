@@ -1,0 +1,35 @@
+{
+  "name": "@fp-cv/react",
+  "version": "0.0.2",
+  "description": "@fp-cv react",
+  "author": "Andrew Jarrett <ajarrett@bestow.com>",
+  "homepage": "https://github.com/ahrjarrett/fp-cv#readme",
+  "license": "MIT",
+  "main": "build/src/index.js",
+  "scripts": {
+    "build": "tsc && vite build",
+    "clean": "npx rimraf build tsconfig.tsbuildinfo",
+    "dev": "vite",
+    "format": "prettier --write '**/src/**/*.{ts,tsx,js}'",
+    "lint": "eslint '**/src/**/*.{ts,tsx,js}'",
+    "lint:fix": "eslint --fix '**/src/**/*.{ts,tsx,js}'",
+    "nuke": "yarn clean && npx rimraf node_modules yarn.lock",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.2",
+    "@types/react": "^17.0.21",
+    "@types/react-dom": "^17.0.9",
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "prettier": "^2.4.1",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.8",
+    "vite-plugin-checker": "^0.3.4",
+    "vite-tsconfig-paths": "^3.3.14"
+  },
+  "dependencies": {
+    "@fp-cv/core": "^0.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

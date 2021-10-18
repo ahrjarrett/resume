@@ -1,45 +1,61 @@
 {
-  "name": "thegrepper",
-  "version": "0.1.0",
+  "name": "fp-cv",
   "private": true,
-  "dependencies": {
-    "puppeteer": "^1.19.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-router-dom": "5.0.0",
-    "react-scripts": "3.0.1",
-    "serve-static": "1.13.2",
-    "styled-components": "^4.3.1"
-  },
-  "homepage": "https://resume.ahrjarrett.com",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "make-pdf": "node make-pdf.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+  "workspaces": ["packages/*"],
+  "repository": "git@github.com:ahrjarrett/fp-cv.git",
+  "description": "monorepo for ahrjarrett's curriculum vitae",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "prettier": "^1.18.2"
+    "cz-conventional-changelog": "^3.3.0",
+    "lerna": "^4.0.0",
+    "madge": "^5.0.1",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "add-to:core": "lerna add --scope=@fp-cv/core",
+    "add-to:data": "lerna add --scope=@fp-cv/data",
+    "add-to:pdf": "lerna add --scope=@fp-cv/pdf",
+    "add-to:react": "lerna add --scope=@fp-cv/react",
+    "add-to:fe": "yarn add-to:react",
+    "build": "lerna run build",
+    "circular": "lerna run circular",
+    "clean": "lerna run clean",
+    "compile": "lerna run compile",
+    "dev:core": "cd packages/core && echo \"TODO: implement\"",
+    "dev:data": "cd packages/data && echo \"TODO: implement\"",
+    "dev:pdf": "cd packages/pdf && echo \"TODO: implement\"",
+    "dev:react:debug": "cd packages/react && DEBUG=vite-tsconfig-paths yarn dev",
+    "dev:react": "cd packages/react && yarn dev",
+    "dev:fe:debug": "yarn dev:react:debug",
+    "dev:fe": "yarn dev:react",
+    "fix:eslint": "eslint --fix \"src/**/*.ts\"",
+    "fix:prettier": "prettier \"src/**/*.ts\" --write",
+    "i": "lerna bootstrap",
+    "ls:graph": "lerna ls -la --graph",
+    "ls:json": "lerna ls -la --json",
+    "ls:topo": "lerna ls -la --toposort",
+    "nuke": "npx rimraf node_modules yarn.lock && lerna run nuke",
+    "publish": "lerna publish",
+    "reboot": "yarn nuke && yarn i && yarn build",
+    "test": "lerna run test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "singleQuote": false,
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "printWidth": 80,
+    "semi": false,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

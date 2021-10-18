@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@fp-cv/core": ["packages/core/src"],
+      "@fp-cv/core/*": ["packages/core/src/*"],
+      "@fp-cv/data": ["packages/data/src"],
+      "@fp-cv/data/*": ["packages/data/src/*"],
+      "@fp-cv/pdf": ["packages/pdf/src"],
+      "@fp-cv/pdf/*": ["packages/pdf/src/*"],
+      "@fp-cv/react": ["packages/react/src"],
+      "@fp-cv/react/*": ["packages/react/src/*"]
+    },
+    "typeRoots": ["node_modules/@types", "typings"]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@fp-cv/pdf",
+  "version": "0.0.2",
+  "description": "@fp-cv pdf",
+  "author": "Andrew Jarrett <ajarrett@bestow.com>",
+  "homepage": "https://github.com/ahrjarrett/fp-cvdev:fe#readme",
+  "license": "MIT",
+  "main": "build/src/index.js",
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "circular": "madge --circular --ts-config ./tsconfig.json --extensions ts ./src",
+    "clean": "npx rimraf build tsconfig.tsbuildinfo",
+    "compile": "tsc -b --verbose tsconfig.json",
+    "nuke": "yarn clean && npx rimraf node_modules yarn.lock"
+  }
+}

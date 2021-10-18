@@ -1,0 +1,22 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/var/folders/lc/vc0k_yqj4hg1c_1rbssftt7r0000gn/T/fnm_multishells/720_1634510899635/bin/lerna',
+0 silly argv   script: 'nuke'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/aj/dev/fp-cv
+3 info versioning independent
+4 error JSONError: Unexpected string in JSON at position 593 while parsing '{  "name": "@fp-cv/react",  "version":' in packages/react/package.json
+4 error
+4 error [0m [90m 15 |[39m     [32m"lint:fix"[39m[33m:[39m [32m"eslint --fix '**/src/**/*.{ts,tsx,js}'"[39m[33m,[39m[0m
+4 error [0m [90m 16 |[39m     [32m"nuke"[39m[33m:[39m [32m"yarn clean && rimraf node_modules yarn.lock"[39m[0m
+4 error [0m[31m[1m>[22m[39m[90m 17 |[39m     [32m"serve"[39m[33m:[39m [32m"vite preview"[39m[0m
+4 error [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+4 error [0m [90m 18 |[39m   }[33m,[39m[0m
+4 error [0m [90m 19 |[39m   [32m"devDependencies"[39m[33m:[39m {[0m
+4 error [0m [90m 20 |[39m     [32m"@types/node"[39m[33m:[39m [32m"^16.9.2"[39m[33m,[39m[0m
+4 error
+4 error     at parseJson (/Users/aj/.fnm/node-versions/v14.18.0/installation/lib/node_modules/lerna/node_modules/parse-json/index.js:29:21)
+4 error     at parse (/Users/aj/.fnm/node-versions/v14.18.0/installation/lib/node_modules/lerna/node_modules/load-json-file/index.js:15:9)
+4 error     at module.exports (/Users/aj/.fnm/node-versions/v14.18.0/installation/lib/node_modules/lerna/node_modules/load-json-file/index.js:18:47)

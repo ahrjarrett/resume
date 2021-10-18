@@ -1,0 +1,97 @@
+#+title: fp-cv
+#+author: andrew jarrett
+#+email: ahrjarrett@gmail.com
+#+date: [2021-10-14 Thu]
+#+repo: https://github.com/ahrjarrett/fp-cv.git
+#+tags: @fp @ADTs @ASTs @typescript @scala @psql @gql @clojure
+#+globs: { *.ts *.tsx } { *.clj *cljs }
+
+* metadata
+- andrew jarrett
+- software engineer
+- rails survivor
+- ahrjarrett@gmail.com
+- linkedin.com/in/ahrjarrett
+- github.com/ahrjarrett
+- austin, texas
+
+* endpoints
+** bestow
+*** headers
+- austin, tx (remote)
+- se II
+- may 2021 - present
+*** body
+- led a team of 5 engineers to v1 release of a purely functional library built using =fp-ts=
+- that library is an SDK that internal teams deployed into production this week (OSS release set for Q2, '22)
+- released internal library =vouchsafe= that has replaced lodash in 3 TS apps, reducing prod bundle size by 0.8MB
+- introduce ~io-ts~, ~monocle-ts~, and more generally, =ddd= into the dev culture
+
+** kazoo
+*** headers
+- austin, tx (remote)
+- se II
+- may 2020 - feb 2021
+*** body
+- introduced `fp-ts` into the codebase
+- aggregate data from various postgres & mongoDB databases using databricks (scala) & bigquery
+- work closely with architecture team to release the company's first graphQL endpoint
+
+** lou
+*** headers
+- austin, TX
+- frontend se
+- oct 2019 - mar 2020
+**** body
+- integrate stripe into customer portal to allow trial users to upgrade without a phone call
+- authored =LOUtils=, a utility library influenced by clojure that DRY-ed out frontend codebase
+- wrote a JS plugin that integrated an in-house chrome extension with redux devtools to improve dx
+
+* education
+** lambda school
+- 2017-2019
+- full-stack web & computer science
+
+** northwestern university
+- 2008-2012
+- english, critical theory
+
+
+* projects
+** vouchsafe
+- 2021
+- fp-ts et. al.
+- author, core maintainer of internal type- and value-level util library
+
+** enrollment SDK
+- 2021
+- fp-ts et. al.
+- team lead and core contributor of proprietary SDK built for internal & external consumption
+
+** typelaunch
+- 2019
+- react / express
+- FE architect for greenfield "website builder"
+
+see some of my projects and contributions at github.com/ahrjarrett
+
+==================================================================
+==================================================================
+==================================================================
+
+* notes
+Between when I interviewed and the day I started, the team I was joining (SDK) underwent 100% turnover. Meaning, I was the team.
+
+That's how I found myself lead of a 5-dev project that would prove to be mission critical.
+
+Despite upper management wanting to rip out fp-ts or start over altogether, I argued that fp-ts was the only thing currently keeping the project sane.
+
+I prepared a 15-minute rebuttal called [[https://github.com/ahrjarrett/talks][Building Deterministic Frontends with =fp-ts=]]
+that I presented to the frontend guild. The staff engineer recommended I present the same at our monthly engineering all-hands,
+which was not enough to move the needle to the functional side at large, but was enough to convince the tech leadership that I
+knew what I was doing and that fp-ts was useful for more than "making code look cool" (which to be honest, I'm not sure that it
+does, at least not in TypeScript).
+
+Due to 100% turnover, found myself lead of 5 devs on a mission-critical project
+
+Picked up development where previous architect had left off, completing the project on-time & expanding its fp-ts et. al. repertoire to include io-ts, monocle-ts and DDD principles

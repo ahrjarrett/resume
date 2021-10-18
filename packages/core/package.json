@@ -12,8 +12,8 @@
   "scripts": {
     "build": "yarn clean && yarn compile",
     "circular": "madge --circular --ts-config ./tsconfig.json --extensions ts ./src",
-    "clean": "npx rimraf build tsconfig.tsbuildinfo",
+    "clean": "rm -rf build && rm tsconfig.tsbuildinfo || true",
     "compile": "tsc -b --verbose tsconfig.json",
-    "nuke": "yarn clean && npx rimraf node_modules yarn.lock"
+    "nuke": "yarn clean && rm -rf node_modules && rm yarn.lock || true"
   }
 }

@@ -1,10 +1,10 @@
 import React, { StrictMode } from "react";
 import { render } from "react-dom";
 
-import { reactConfig } from "./config";
+// import { reactConfig } from "./config";
 import { App } from "./App";
 
-reactConfig();
+// reactConfig();
 
 render(
   <StrictMode>

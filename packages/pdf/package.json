@@ -3,14 +3,19 @@
   "version": "0.0.2",
   "description": "@fp-cv pdf",
   "author": "Andrew Jarrett <ajarrett@bestow.com>",
-  "homepage": "https://github.com/ahrjarrett/fp-cvdev:fe#readme",
+  "homepage": "https://github.com/ahrjarrett/fp-cv#readme",
   "license": "MIT",
   "main": "build/src/index.js",
   "scripts": {
     "build": "yarn clean && yarn compile",
     "circular": "madge --circular --ts-config ./tsconfig.json --extensions ts ./src",
-    "clean": "npx rimraf build tsconfig.tsbuildinfo",
+    "clean": "rm -rf build && rm tsconfig.tsbuildinfo || true",
     "compile": "tsc -b --verbose tsconfig.json",
-    "nuke": "yarn clean && npx rimraf node_modules yarn.lock"
+    "nuke": "yarn clean && rm -rf node_modules && rm yarn.lock || true"
+  },
+  "devDependencies": {
+    "@types/serve-static": "^1.13.10",
+    "puppeteer": "^10.4.0",
+    "serve-static": "^1.14.1"
   }
 }

@@ -8,12 +8,12 @@
   "main": "build/src/index.js",
   "scripts": {
     "build": "tsc && vite build",
-    "clean": "npx rimraf build tsconfig.tsbuildinfo",
+    "clean": "rm -rf build && rm tsconfig.tsbuildinfo || true",
     "dev": "vite",
     "format": "prettier --write '**/src/**/*.{ts,tsx,js}'",
     "lint": "eslint '**/src/**/*.{ts,tsx,js}'",
     "lint:fix": "eslint --fix '**/src/**/*.{ts,tsx,js}'",
-    "nuke": "yarn clean && npx rimraf node_modules yarn.lock",
+    "nuke": "yarn clean && rm -rf node_modules && rm yarn.lock || true",
     "serve": "vite preview"
   },
   "devDependencies": {

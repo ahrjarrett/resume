@@ -9,12 +9,12 @@
     "lerna": "^4.0.0",
     "madge": "^5.0.1",
     "prettier": "^2.3.2",
-    "rimraf": "^3.0.2",
     "typescript": "^4.4.4"
   },
   "scripts": {
     "add-to:core": "lerna add --scope=@fp-cv/core",
     "add-to:data": "lerna add --scope=@fp-cv/data",
+    "add-to:parser": "lerna add --scope=@fp-cv/parser",
     "add-to:pdf": "lerna add --scope=@fp-cv/pdf",
     "add-to:react": "lerna add --scope=@fp-cv/react",
     "add-to:fe": "yarn add-to:react",
@@ -24,6 +24,7 @@
     "compile": "lerna run compile",
     "dev:core": "cd packages/core && echo \"TODO: implement\"",
     "dev:data": "cd packages/data && echo \"TODO: implement\"",
+    "dev:parser": "cd packages/pdf && echo \"TODO: implement\"",
     "dev:pdf": "cd packages/pdf && echo \"TODO: implement\"",
     "dev:react:debug": "cd packages/react && DEBUG=vite-tsconfig-paths yarn dev",
     "dev:react": "cd packages/react && yarn dev",
@@ -35,7 +36,7 @@
     "ls:graph": "lerna ls -la --graph",
     "ls:json": "lerna ls -la --json",
     "ls:topo": "lerna ls -la --toposort",
-    "nuke": "npx rimraf node_modules yarn.lock && lerna run nuke",
+    "nuke": "rm -rf node_modules && rm yarn.lock || true && lerna run nuke",
     "publish": "lerna publish",
     "reboot": "yarn nuke && yarn i && yarn build",
     "test": "lerna run test"

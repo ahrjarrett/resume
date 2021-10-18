@@ -17,10 +17,11 @@ build/
 .env.test.local
 .env.production.local
 
-.log
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
 # we don't want to check in lock-file just yet
 package-lock.json

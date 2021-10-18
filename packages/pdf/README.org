@@ -1,0 +1,3 @@
+#+title: pdf
+
+CV pdf builder for @fp-cv. super simple implementation that uses puppeteer

@@ -3,13 +3,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": true,
-    "skipLibCheck": false,
-    "allowSyntheticDefaultImports": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "noEmit": true,
+    "outDir": "./build",
     "jsx": "react-jsx",
     "useDefineForClassFields": true,
     "isolatedModules": true

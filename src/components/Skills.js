@@ -1,21 +1,35 @@
-import React from 'react'
-import {SectionContainer} from 'components/Containers'
+import React from "react";
+import { SectionContainer } from "components/Containers";
+
+// const skills = [
+//   'TypeScript',
+//   'Python',
+//   'Clojure',
+//   'React',
+//   'GraphQL',
+//   'Node.js',
+//   'Redux',
+//   'AWS',
+//   'GCP',
+//   'SQL',
+//   'D3',
+// ]
 
 const skills = [
-  'TypeScript',
-  'Python',
-  'Clojure',
-  'React',
-  'GraphQL',
-  'Node.js',
-  'Redux',
-  'AWS',
-  'GCP',
-  'SQL',
-  'D3',
-]
+  "fp-ts",
+  "typescript",
+  "graphql",
+  "react",
+  "node",
+  "postgres",
+  "scala",
+  "gcp",
+  "clojure",
+  "adts",
+  "python",
+];
 
-const Skill = ({skill}) => <span className="skill">{skill}</span>
+const Skill = ({ skill }) => <span className="skill">{skill}</span>;
 
 const Skills = () => (
   <SectionContainer>
@@ -31,6 +45,6 @@ const Skills = () => (
       </div>
     </div>
   </SectionContainer>
-)
+);
 
-export default Skills
+export default Skills;

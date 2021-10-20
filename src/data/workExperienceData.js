@@ -1,33 +1,37 @@
-import React from "react"
+import React from "react";
 
-const HL = ({ children }) => <span className="hl">{children}</span>
+const HL = ({ children }) => <span className="hl">{children}</span>;
 const Bullet = ({ children }) => (
   <p className="section-item-bullet">{children}</p>
-)
+);
 
 export const workExperienceData = [
   {
     title: "Kazoo",
-    subtitle: "Software Engineer II",
+    subtitle: "Software Engineer",
     time: "May 2020 - Feb 2021",
     location: "Austin, TX (Remote)",
     bullets: [
       <Bullet>
         <HL>
-          Build & maintain data visualizations across all product dashboards
+          Introduced & deployed "fp-ts" library into production, despite the dev
+          culture being strongly Java/OO-oriented
         </HL>
       </Bullet>,
       <Bullet>
-        Aggregate data from various PostgreSQL & MongoDB databases using Scala
-        Databricks notebooks & GCP BigQuery warehouses
+        Built & maintained data visualizations across all product dashboards
+      </Bullet>,
+      <Bullet>
+        Stream & aggregate data from various PostgreSQL & MongoDB databases into
+        Databricks (Scala) & BigQuery to create ad hoc reports
       </Bullet>,
       <Bullet>Manage team of contractors to delegate & review work</Bullet>,
       <Bullet>
-        Work closely with Architecture team to expose new measures via GraphQL;
-        deployed `fp-ts` library into production in an effort to improve type
-        safety
-      </Bullet>
-    ]
+        Work closely with Architecture team to expose more of the domain model
+        via GraphQL; deployed `fp-ts` library into production in an effort to
+        improve type
+      </Bullet>,
+    ],
   },
   {
     title: "LOU Assistant",
@@ -48,8 +52,8 @@ export const workExperienceData = [
       <Bullet>
         Create webpack build for in-house Chrome Extension,{" "}
         <HL>extend Redux DevTools</HL> to talk to it
-      </Bullet>
-    ]
+      </Bullet>,
+    ],
   },
 
   {
@@ -71,9 +75,9 @@ export const workExperienceData = [
       <Bullet>
         Write <HL>PostgreSQL</HL> queries & thin <HL>D3 client</HL> that enabled
         sales to track their KPIs in real time
-      </Bullet>
-    ]
-  }
+      </Bullet>,
+    ],
+  },
   // {
   //   title: "FollowClosely",
   //   subtitle: "Frontend Developer",
@@ -90,7 +94,7 @@ export const workExperienceData = [
   //     </Bullet>
   //   ]
   // }
-]
+];
 
 // {
 //   title: 'Signpost',

@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2017",
+    "outDir": "dist",
+    "rootDir": "src",
+    "jsx": "react-jsx"
+  },
+  "references": [{ "path": "../utils" }, { "path": "../typelevel" }],
+  "include": ["src/**/*"]
+}

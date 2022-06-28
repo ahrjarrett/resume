@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "@ahrjarrett/resume-docgen",
+  "version": "1.0.0",
+  "dependencies": {
+    "fp-ts": "2.12.1",
+    "io-ts": "^2.2.16",
+    "puppeteer": "^15.1.1",
+    "serve-static": "1.15.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf .target && rm -f tsconfig.tsbuildinfo",
+    "make-pdf": "ts-node src/make-pdf.ts",
+    "nuke": "npm run clean && rm -rf node_modules"
+  },
+  "prettier": {
+    "semi": false
+  }
+}

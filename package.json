@@ -1,45 +1,33 @@
 {
-  "name": "thegrepper",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "puppeteer": "^1.19.0",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-router-dom": "5.0.0",
-    "react-scripts": "3.0.1",
-    "serve-static": "1.13.2",
-    "styled-components": "^4.3.1"
-  },
-  "homepage": "https://resume.ahrjarrett.com",
+  "description": "andrew jarrett's resume",
+  "repository": "git@github.com:ahrjarrett/resume.git",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "make-pdf": "node make-pdf.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "npm run build -w ./packages",
+    "clean": "npm run clean -w ./packages",
+    "compile": "npm run compile -w ./packages",
+    "dev:core": "cd packages/core && npm run dev",
+    "dev:gen": "cd packages/docgen && npm run dev",
+    "lint": "npm run lint -w ./packages",
+    "nuke": "rm -rf node_modules && rm -f package-lock.json && npm run nuke -ws",
+    "format": "npm run format -w ./packages --if-present",
+    "format:dryrun": "npm run format:dryrun -w ./packages --if-present",
+    "reboot": "npm run nuke && npm install && npm run build",
+    "test": "npm run build && npm run test -w ./packages",
+    "test:core": "npm run build && npm run test -w @ahrjarrett/resume-core",
+    "test:types": "npm run test:unit -w @ahrjarrett/resume-typelevel",
+    "test:utils": "npm run test:unit -w @ahrjarrett/resume-utils"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.3",
-    "prettier": "^1.18.2"
+    "typescript": "^4.7.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "resolutions": {
+    "typescript": "4.7.4"
   }
 }

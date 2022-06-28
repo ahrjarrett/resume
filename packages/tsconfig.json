@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../",
+    "paths": {
+      "@ahrjarrett/resume-core": ["packages/core/src"],
+      "@ahrjarrett/resume-core/*": ["packages/core/src/*"],
+      "@ahrjarrett/resume-typelevel": ["packages/typelevel/src"],
+      "@ahrjarrett/resume-typelevel/*": ["packages/typelevel/src/*"],
+      "@ahrjarrett/resume-utils": ["packages/utils/src"],
+      "@ahrjarrett/resume-utils/*": ["packages/utils/src/*"]
+    },
+    "typeRoots": ["node_modules/@types", "typings"]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "@ahrjarrett/resume-core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/ahrjarrett/resume",
+  "files": ["README.md", "dist/**/*", "!dist/**/*.spec.*"],
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf dist && rm -rf .target && rm -f tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json",
+    "lint": "eslint --fix \"src/**/*.ts\"",
+    "lint:dryrun": "eslint \"src/**/*.ts\"",
+    "nuke": "npm run clean && rm -rf node_modules",
+    "format": "npx prettier \"src/**/*.ts\" --write",
+    "format:dryrun": "npx prettier \"src/**/*.ts\" --check",
+    "test": "npm run build && npx ava",
+    "test:unit": "npm run build && npx ava"
+  },
+  "dependencies": {
+    "@ahrjarrett/resume-utils": "1.0.0",
+    "fp-ts": "^2.12.1",
+    "io-ts": "^2.2.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25"
+  },
+  "prettier": {
+    "semi": false
+  }
+}

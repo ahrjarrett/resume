@@ -1,0 +1,36 @@
+{
+  "name": "@ahrjarrett/resume-typelevel",
+  "version": "1.0.0",
+  "description": "resume types, utility types, and an internal framework for making type-level assertions",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "files": ["dist/**/*"],
+  "repository": "git@github.com:Bestowinc/enroll-sdk-core.git",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json",
+    "lint": "eslint --fix \"src/**/*.ts\"",
+    "lint:dryrun": "npx eslint src/**/*.ts",
+    "nuke": "npm run clean && rm -rf node_modules",
+    "format": "npx prettier \"(src|bin)/**/*.ts\" --write",
+    "format:dryrun": "npx prettier \"(src|bin)/**/*.ts\" --check",
+    "test": "npm run build && npm run lint && npm run test:unit"
+  },
+  "dependencies": {
+    "@ahrjarrett/resume-utils": "1.0.0",
+    "fp-ts": "^2.12.1",
+    "io-ts": "^2.2.16"
+  },
+  "devDependencies": {
+    "@ava/typescript": "^3.0.1",
+    "@types/node": "^17.0.35",
+    "ava": "^4.1.0",
+    "eslint": "^8.7.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.4"
+  },
+  "prettier": {
+    "semi": false
+  }
+}
